@@ -20,6 +20,7 @@ public class ObjectClassOverrridingExample {
         Student obj2 = new Student("priyanshi", 273634223);
         System.out.println(obj);
         System.out.println(obj2);
+
     }
     
 }
