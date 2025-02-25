@@ -28,12 +28,14 @@ public class VirtualThreadExample {
 
        try(ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor()){
 
-            System.out.println("I am Virtual thread from Executor Service:"+Thread.currentThread());
+            executorService.submit(()-> System.out.println("I am Virtual thread from Executor Service:"+Thread.currentThread()));
        }
        catch(Exception e){
         throw  new RuntimeException(e);
        }
     }
+
+    
 }
     
 }
